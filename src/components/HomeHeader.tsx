@@ -14,6 +14,7 @@ export function HomeHeader() {
         source={{ uri: 'https://github.com/PVGusmao.png' }}
         alt='Imagem do usupario'
         size={16}
+        
       />
 
       <VStack>
