@@ -43,15 +43,6 @@ export function AppRoutes() {
     >
 
       <Screen
-        name='history'
-        component={History}
-        options={{
-          tabBarIcon: ({ color }) => (
-            <HistorySvg width={iconSize} height={iconSize} fill={color} />
-          )
-        }}
-      />
-      <Screen
         name='home'
         component={Home}
         options={{
@@ -61,7 +52,16 @@ export function AppRoutes() {
         }}
       />
 
-
+      <Screen
+        name='history'
+        component={History}
+        options={{
+          tabBarIcon: ({ color }) => (
+            <HistorySvg width={iconSize} height={iconSize} fill={color} />
+          )
+        }}
+      />
+      
       <Screen
         name='profile'
         component={Profile}
