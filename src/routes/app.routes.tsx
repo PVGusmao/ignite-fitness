@@ -39,16 +39,8 @@ export function AppRoutes() {
           paddingBottom: sizes[10],
           paddingTop: sizes[6],
         }
-      }}>
-      <Screen
-        name='home'
-        component={Home}
-        options={{
-          tabBarIcon: ({ color }) => (
-            <HomeSvg width={iconSize} height={iconSize} fill={color} />
-          )
-        }}
-      />
+      }}
+    >
 
       <Screen
         name='history'
@@ -59,6 +51,16 @@ export function AppRoutes() {
           )
         }}
       />
+      <Screen
+        name='home'
+        component={Home}
+        options={{
+          tabBarIcon: ({ color }) => (
+            <HomeSvg width={iconSize} height={iconSize} fill={color} />
+          )
+        }}
+      />
+
 
       <Screen
         name='profile'
